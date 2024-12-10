@@ -41,12 +41,15 @@ img {
   padding-bottom: 120px;
 }
 /*heder*/
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  border-bottom: 1px solid #e7e9fc;
 }
 .nav-header {
   display: flex;
@@ -170,11 +173,14 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.name-text-li {
+  letter-spacing: 0.02em;
+}
+
 .name-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -197,7 +203,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 /*section two*/
 .container section-two {
@@ -259,6 +264,9 @@ img {
 .section portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
 .portfolio {
   background-color: #ffffff;
@@ -276,7 +284,7 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.container-div-potfolio {
+.container .div-potfolio {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -292,7 +300,6 @@ img {
 }
 .li-port {
   width: calc((100%-48) / 3);
-  width: 360px;
   text-align: justify;
   align-items: justify;
   justify-content: center;
