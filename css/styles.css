@@ -11,6 +11,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -26,6 +27,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  /*object-fit: cover;*/
 }
 /*common*/
 .container {
@@ -162,7 +165,7 @@ img {
   background-color: #404bbf;
 }
 
-/*section with no name*/
+/*noname*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -185,29 +188,33 @@ img {
   margin-bottom: 8px;
 }
 
-.section .section-noname {
+.section-noname {
   display: flex;
-  width: 1128px;
-  margin: auto;
+  /*width: 1158px;*/
+  margin-left: auto;
+  margin-right: auto;
   gap: 24px;
   justify-content: center;
-  width: calc((100% - 72px) / 4);
+  /*width: calc((100% - 72px) / 4);*/
+  width: 264px;
+  /*align-items: center;*/
 }
 
-.container-text {
-  display: block;
-  width: 264px;
-  align-items: center;
-}
+/*.container-text {
+}*/
 .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 /*section two*/
-.container section-two {
+.section .container .section-two {
+  display: flex;
+  gap: 24px;
   background: #f4f4fd;
   align-items: center;
+  flex-wrap: wrap;
+  width: ((100%-72)/4);
 }
 
 .team-name {
@@ -218,9 +225,13 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  width: 162px;
-  margin: auto;
-  align-items: center;
+  /*width: 162px;
+  height: 40px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*align-items: center;
+  display: flex;
+  align-self: stretch;*/
 }
 .list-team {
   background-color: #ffffff;
@@ -261,12 +272,19 @@ img {
 }
 
 /*section portfolio*/
-.section portfolio {
+
+.section-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+  display: flex;
+  gap: 24px;
+  background: #f4f4fd;
+  align-items: center;
+  flex-wrap: wrap;
+  width: ((100%-72)/3);
 }
 .portfolio {
   background-color: #ffffff;
@@ -294,14 +312,15 @@ img {
   display: flex;
   margin: auto;
   gap: 24px;
-  row-gap: 48px;
+  /*row-gap: 48px;*/
   flex-wrap: wrap;
-  row-gap: 48px;
+  /*align-items: center;*/
+  width: ((100%-72)/3);
+  /*align-content: center;*/
 }
 .li-port {
-  width: calc((100%-48) / 3);
   text-align: justify;
-  align-items: justify;
+  /*align-items: justify;*/
   justify-content: center;
   margin-bottom: 48px;
 }
