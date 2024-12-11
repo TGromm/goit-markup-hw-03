@@ -172,11 +172,13 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
+  padding: 0;
+
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .noname {
@@ -198,6 +200,7 @@ img {
 
 .section-noname > li {
   width: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .name-text {
@@ -215,6 +218,7 @@ img {
 .name-text-li {
   letter-spacing: 0.02em;
   margin-right: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .name-text-li:last-child {
@@ -233,8 +237,9 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.container .container-team {
-  padding: 32px 0;
+.container-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -297,11 +302,10 @@ img {
 /*section portfolio*/
 
 .section-portfolio {
-  padding-top: 120px;
   padding-bottom: 120px;
+  padding-top: 120px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 16px;
   display: flex;
   gap: 24px;
   background: #f4f4fd;
@@ -325,7 +329,7 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.container .div-potfolio {
+.div-potfolio {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -335,31 +339,40 @@ img {
   display: flex;
   margin: auto;
   gap: 24px;
-  /*row-gap: 48px;*/
+  row-gap: 48px;
   flex-wrap: wrap;
   /*align-items: center;*/
-  width: calc((100%-72) / 3);
-  /*align-content: center;*/
 }
+.portfolio-list :last-child {
+  margin-bottom: 0;
+}
+
 .li-port {
   text-align: justify;
-  /*align-items: justify;*/
+  align-items: justify;
   justify-content: center;
   margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
 }
 
 /*списки ымя портфолыо*/
 .name-list-portfolio {
+  margin-bottom: 8px;
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 226px;
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   gap: 24px;
+}
+.container-h-p {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 .text-s-four {
   margin-top: 8px;
