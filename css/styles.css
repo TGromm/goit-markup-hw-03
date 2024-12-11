@@ -184,7 +184,6 @@ img {
   margin: 120px auto;
   padding: 0 156px;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
   max-width: 1128px;
 }
 
@@ -215,6 +214,7 @@ img {
 }
 .name-text-li {
   letter-spacing: 0.02em;
+  width: calc((100% - 72px) / 4);
 }
 
 /*section two*/
