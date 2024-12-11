@@ -173,23 +173,21 @@ img {
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .section-noname {
   display: flex;
-  /*width: 1158px;*/
   margin-left: auto;
   margin-right: auto;
   gap: 24px;
   justify-content: center;
-  /*width: calc((100% - 72px) / 4);*/
-  /* width: 264px;*/
+  width: calc((100% - 72px) / 4);
   width: 1128px;
   height: 104px;
-  /*align-items: center;*/
 }
 .name-text {
   font-weight: 500;
