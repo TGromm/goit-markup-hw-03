@@ -187,11 +187,17 @@ img {
   padding: 0 156px;
   gap: 24px;
   max-width: 1128px;
+  justify-content: center;
 }
 
 .section-noname {
   display: flex;
   gap: 24px;
+  width: 100%;
+}
+
+.section-noname > li {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .name-text {
@@ -208,7 +214,6 @@ img {
 }
 .name-text-li {
   letter-spacing: 0.02em;
-  width: calc((100% - 72px) / 4);
   margin-right: 24px;
 }
 
